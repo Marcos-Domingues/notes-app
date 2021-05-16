@@ -1,0 +1,18 @@
+li{
+  list-style-type: none;
+}
+
+.card-nota{
+  padding: 10px;
+  color: #252422;
+  background-color: #ffe066;
+  width: 300px;
+  height: 300px;
+  display: list-item;
+  font-family: cursive;
+  overflow-x: auto;
+}
+
+h3{
+  margin: 0;
+}

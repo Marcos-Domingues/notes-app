@@ -1,0 +1,7 @@
+ul{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+li{
+  margin: 5px;
+}
