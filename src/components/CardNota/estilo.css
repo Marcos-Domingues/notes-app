@@ -13,6 +13,19 @@ li{
   overflow-x: auto;
 }
 
+.card-nota #div-title{
+  display: flex !important;
+}
+.card-nota #div-title h3{
+  width: 100%;
+}
+
+svg {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
 h3{
   margin: 0;
 }

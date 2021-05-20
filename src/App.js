@@ -1,5 +1,5 @@
 import { Component } from "react";
-import "./App.css";
+import "./assets/App.css";
 import FormularioCadastro from "./components/FormularioCadastro/FormularioCadastro";
 import ListaDeNotas from "./components/ListaDeNotas/ListaDeNotas"
 
@@ -20,6 +20,13 @@ class App extends Component {
     this.setState(novoEstado)
 
   }
+
+  deletarNota(index){
+    let arrayNotas = this.state.notas;
+    arrayNotas.splice(index,1);
+    this.setState({nota:arrayNotas})
+  }
+
   render() {
     return (
       <section>
@@ -27,7 +34,9 @@ class App extends Component {
             <FormularioCadastro criarNota={this.CriarNota.bind(this)} />
           </div>
           <div className="quadro-notas">
-            <ListaDeNotas notas={this.state.notas} />
+            <ListaDeNotas 
+            notas={this.state.notas}
+            apagarNota={this.deletarNota.bind(this)}/>
           </div>
       </section>
     );
